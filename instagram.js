@@ -1,8 +1,3 @@
-// I updated this script as the previous approach of trying to select and operate only on the current <video> element being looked at
-// was in reality not working. In fact it had the problem that it kept referencing an already gone-off-screen video element, 
-// having no effect on the current "focused" video element.
-// My approch to fix it was to select and operate on all video elements at once. Not so elegant, but it works.
-
 setTimeout(function keepRun() {
   setTimeout(keepRun, 1000);
    
